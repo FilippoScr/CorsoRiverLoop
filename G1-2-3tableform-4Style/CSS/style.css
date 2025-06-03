@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabili */
+/* :root {
+    --primary-color: #3bc051;
+    --secondary-color: #82ecff;
+    --text-color: #000000;
+    --background-color: #535353;
+}
+
+[data-theme="dark"] {
+    background-color: #000000;
+    color: #f4f4f4;
+} */
+/* Applicazione delle variabili:
+h5 {color: var(--primary-color);} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #535353;
+    color: #000000;
+}
+
+body > div {
+    padding: 12px;
+}
+
+header {
+    background-color: #3bc051;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    height: 25px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    color: #f4f4f4;
+    border: #3bc051 2px solid;
+    border-radius: 8px;
+    padding: 2px 4px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+nav a {
+    display: inline-block;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+main {
+    background-color: #82ecff;
+}
+
+aside {
+    background-color: #3bc051;
+}
+
+footer {
+    background-color: #000000;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

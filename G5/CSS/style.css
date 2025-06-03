@@ -1,0 +1,143 @@
+/* Variabili */
+:root {
+    --bg-body-color: #009468;
+    --white-color: #ffffff;
+    --primary-color: #f09c00;
+    --secondary-color: #494949;
+    --text-p-color: #000000;
+    --text-s-color: #f09c00;
+}
+/* Solitamente su bg con --primary-color imposteremo --text-p-color, analogo sc>tsc. */
+
+header, nav, main, aside, footer {
+    padding: 10px;
+}
+
+/* [data-theme="dark"] {
+    background-color: #000000;
+    color: #f4f4f4;
+} */
+
+/* Applicazione delle variabili:
+        h5 {color: var(--primary-color);} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+h1 { font-size: 5em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+p {
+    font-size: 1.4em;
+}
+
+/* span {
+    font-size: 1.2em;
+} */
+
+a {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--text-s-color);
+    text-decoration: none;
+}
+
+.pageProjects {
+    color: var(--bg-body-color);
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-body-color);
+}
+
+body>div {
+    margin: 10px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-p-color);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px 4px 0 0;
+    align-items: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: var(--text-s-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style-type: none;
+    border: var(--primary-color) 2px solid;
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+
+main {
+    background-color: var(--primary-color);
+    color: var(--text-p-color);
+}
+
+main>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 20px;
+}
+
+article, section {
+    border-radius: 8px;
+    background-color: #ffffff60;
+    color: var(--text-p-color);
+    border: var(--bg-body-color) 4px solid;
+}
+
+section {
+    height: 3.6em;
+    overflow: hidden;
+    transition: height 0.1s cubic-bezier(0.77,0,0.175,1);
+    padding: 4px;
+}
+
+section:first-of-type:hover {
+    height: 8.4em;
+    transition: height 1.2s cubic-bezier(0.23,1,0.32,1);
+}
+
+section:not(:first-of-type):hover {
+    height: 7em;
+    transition: height 1.2s cubic-bezier(0.23,1,0.32,1);
+}
+
+/* aside {
+    background-color: var();
+    color: var();
+} */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-s-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+}
